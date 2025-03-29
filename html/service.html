@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service - Poket</title>
+
+    <!-- IcoFont (if using IcoFont) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/icofont/1.0.1/css/icofont.min.css">
+
+    <!-- FontAwesome (if using FontAwesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/service.css">
+
+    <link rel="icon" href="https://themexbd.com/poket/itsolution/wp-content/uploads/2021/10/poket-favi.png"
+        sizes="32x32">
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="contact-info">
+            <span><i class="fas fa-home"></i> 2nd Floor New World</span>
+            <span><i class="fas fa-phone-alt"></i> +498556778345</span>
+            <span><i class="fas fa-envelope"></i> demo@example.com</span>
+        </div>
+
+        <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../images/logo.png" alt="Poket Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="../html/about.html">About</a></li>
+            <li><a href="../html/service.html">Service</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Pages <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="../html/client.html">Our Clients</a></li>
+                    <li><a href="../html/pricing.html">Pricing</a></li>
+                    <li><a href="../html/team.html">Team</a></li>
+                    <li><a href="../html/faq.html">FAQ Page</a></li>
+                    <li><a href="../html/singleservices.html">Single Service</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbutn">Blog <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="../html/blog.html">Blog Grid</a></li>
+                    <li><a href="../html/blog Left Sidebar.html">Blog Left Sidebar</a></li>
+                    <li><a href="../html/blog Right Sidebar.html">Blog Right Sidebar</a></li>
+                </ul>
+            </li>
+            <li><a href="../html/contact.html">Contact</a></li>
+        </ul>
+
+        <div class="search-support">
+            <i class="fas fa-search"></i>
+            <button class="support-btn">Get a Support</button>
+            <!-- Menu Icon -->
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+    <!-- Sidebar Menu -->
+    <div class="menu" id="menu">
+        <div class="menu-header">
+            <img src="../images/logo.png" alt="Poket Logo">
+            <i class="fas fa-times" onclick="toggleMenu()"></i>
+        </div>
+        <ul>
+            <li class="menu-item"><a href="/index.html">Home</a></li>
+            <li class="menu-item"><a href="../html/about.html">About</a></li>
+            <li class="menu-item"><a href="../html/service.html">Service</a></li>
+            <li class="menu-item" onclick="toggleSubMenu('pages-submenu1', this)">
+                Pages <i class="fas fa-plus"></i>
+            </li>
+            <ul class="submenu" id="pages-submenu1">
+                <li class="menu-item"><a href="../html/client.html">Our Clients</a></li>
+                <li class="menu-item"><a href="../html/pricing.html">Pricing</a></li>
+                <li class="menu-item"><a href="../html/team.html">Team></a></li>
+                <li class="menu-item"><a href="../html/faq.html">FAQ Page</a></li>
+                <li class="menu-item"><a href="../html/singleservices.html">Single Service</a></li>
+            </ul>
+            <li class="menu-item" onclick="toggleSubMenu('blog-submenu', this)">
+                Blog <i class="fas fa-plus"></i>
+            </li>
+            <ul class="submenu" id="blog-submenu">
+                <li class="menu-item"><a href="../html/blog.html">Blog Grid</a></li>
+                <li class="menu-item"><a href="../html/blog Left Sidebar.html">Blog Left Sidebar</a></li>
+                <li class="menu-item"><a href="../html/blog Right Sidebar.html">Blog Right Sidebar</a></li>
+            </ul>
+            <li class="menu-item"><a href="../html/contact.html">Contact</a></li>
+
+    </div>
+
+
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Service</h1>
+            <p>You Are Currently Here! > <a href="/index.html">Home</a> > Service</p>
+        </div>
+    </section>
+
+    <section class="service-section">
+        <p class="service-label">OUR SERVICE</p>
+        <h2 class="service-heading">Something We Can Help You.</h2>
+    </section>
+
+    <section class="services">
+        <div class="services-container">
+            <div class="service-card">
+                <i class="fa-solid fa-gamepad"></i> <!-- Drone icon -->
+                <h3>Drone's Technology</h3>
+                <p class="hero-paragraph">There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    altera.</p>
+                <img src="../images/s1.jpg" alt="Team Working">
+            </div>
+            <div class="service-card">
+                <i class="fas fa-code"></i> <!-- Code icon -->
+                <h3>High-Quality Code</h3>
+                <p class="hero-paragraph">There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    altera.</p>
+                <img src="../images/s1.jpg" alt="Team Working">
+            </div>
+            <div class="service-card">
+                <i class="fas fa-user-shield"></i> <!-- Cyber security icon -->
+                <h3>Cyber Security</h3>
+                <p class="hero-paragraph">There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    altera.</p>
+                <img src="../images/s1.jpg" alt="Team Working">
+            </div>
+            <div class="service-card">
+                <i class="fas fa-paint-brush"></i> <!-- UI/UX icon -->
+                <h3>UI/UX Design</h3>
+                <p class="hero-paragraph">There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    altera.</p>
+                <img src="../images/s1.jpg" alt="Team Working">
+            </div>
+            <div class="service-card">
+                <i class="fas fa-box-open"></i> <!-- Digital product icon -->
+                <h3>Digital Products</h3>
+                <p class="hero-paragraph">There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    altera.</p>
+                <img src="../images/s1.jpg" alt="Team Working">
+            </div>
+            <div class="service-card">
+                <i class="fas fa-globe"></i> <!-- Digital experience icon -->
+                <h3>Digital Experiences</h3>
+                <p class="hero-paragraph">There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    altera.</p>
+                <img src="../images/s1.jpg" alt="Team Working">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- start of work process -->
+    <section class="work-process">
+        <div class="container">
+            <div class="section-header">
+                <span class="process-label">OUR PROCESS</span>
+                <h2>Check Out Our Work Process</h2>
+            </div>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-image">
+                        <img src="../images/process-1.png" alt="Choose a Service">
+                    </div>
+                    <h3>Choose a Service</h3>
+                    <p>Branches are situated major metro cities and overseas is open for you!</p>
+                </div>
+                <div class="step">
+                    <div class="step-image">
+                        <img src="../images/process-2.png" alt="Request a Meeting">
+                    </div>
+                    <h3>Request a Meeting</h3>
+                    <p>Branches are situated major metro cities and overseas is open for you!</p>
+                </div>
+                <div class="step">
+                    <div class="step-image">
+                        <img src="../images/process-3.png" alt="Custom Plan">
+                    </div>
+                    <h3>Custom Plan</h3>
+                    <p>Branches are situated major metro cities and overseas is open for you!</p>
+                </div>
+                <div class="step">
+                    <div class="step-image">
+                        <img src="../images/process-4.png" alt="Let's Make Enjoy">
+                    </div>
+                    <h3>Let's Make Enjoy</h3>
+                    <p>Branches are situated major metro cities and overseas is open for you!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Our Services -->
+    <div class="service-container">
+        <div class="service-content">
+            <!-- Left Section: Service Info -->
+            <div class="service-info">
+                <h2 class="service-header">Our Service</h2>
+                <h3 class="service-subheader">Our Provided Service</h3>
+                <p class="service-description">
+                    These are real professionals who are focused on success. Each of them learns new technologies and
+                    implements them.
+                </p>
+                <a href="#" class="all-service-btn">All Service</a>
+            </div>
+
+            <!-- Right Section: Two Cards -->
+            <div class="first-row-cards">
+                <div class="card">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>The are variations of passages of abe, but majority have suffered</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+                <div class="card">
+                    <i class="fas fa-desktop"></i>
+                    <h3>Finest Quality</h3>
+                    <p>The are variations of passages of abe, but majority have suffered</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Row: Three Cards -->
+        <div class="cards">
+            <div class="card">
+                <i class="fas fa-palette"></i>
+                <h3>Perfect Design</h3>
+                <p>The are variations of passages of abe, but majority have suffered</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="card">
+                <i class="fas fa-network-wired"></i>
+                <h3>Technology</h3>
+                <p>The are variations of passages of abe, but majority have suffered</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Data Security</h3>
+                <p>The are variations of passages of abe, but majority have suffered</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start Case Study Section -->
+    <section class="case-studies">
+        <div class="container">
+            <h3 class="section-subtitle">OUR CASE</h3>
+            <h2 class="section-title">Our Latest Case Studies</h2>
+            <p class="section-description">
+                Over 25 years working in IT services, developing software applications and mobile apps
+                from its medieval origins to the digital era.
+            </p>
+
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="case-item">
+                            <img src="../images/p1.jpg" alt="Data Protection">
+                            <div class="case-info">
+                                <h4>Data Protection</h4>
+                                <p class="category">Development</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="case-item">
+                            <img src="../images/p2.jpg" alt="Analytic Solutions">
+                            <div class="case-info">
+                                <h4>Analytic Solutions</h4>
+                                <p class="category">Technology</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="case-item">
+                            <img src="../images/p3.jpg" alt="Best IT Practices">
+                            <div class="case-info">
+                                <h4>Best IT Practices</h4>
+                                <p class="category">IT Solution</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="case-item">
+                            <img src="../images/p4.jpg" alt="Data Protection">
+                            <div class="case-info">
+                                <h4>Data Protection</h4>
+                                <p class="category">Development</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Navigation and Pagination -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Our Member Section -->
+    <section class="team-section-our-member">
+        <div class="container">
+            <div class="team-section-title">
+                <span>OUR MEMBER</span>
+                <h2>IT Solution Expert Our Company <br> Member</h2>
+            </div>
+            <div class="team-section-member-grid">
+                <div class="team-section-member-card">
+                    <div class="team-section-image-container">
+                        <img src="../images/team-01.jpg" alt="Tony Lindley">
+                        <div class="team-section-share-container">
+                            <div class="team-section-share-btn">
+                                <i class="fas fa-share-alt"></i>
+                            </div>
+                            <div class="team-section-social-icons">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-section-member-info">
+                        <h3>Tony Lindley</h3>
+                        <p>UI Designer</p>
+                    </div>
+                </div>
+                <div class="team-section-member-card">
+                    <div class="team-section-image-container">
+                        <img src="../images/team-02.jpg" alt="Tony Lindley">
+                        <div class="team-section-share-container">
+                            <div class="team-section-share-btn">
+                                <i class="fas fa-share-alt"></i>
+                            </div>
+                            <div class="team-section-social-icons">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-section-member-info">
+                        <h3>Tony Lindley</h3>
+                        <p>UI Designer</p>
+                    </div>
+                </div>
+                <div class="team-section-member-card">
+                    <div class="team-section-image-container">
+                        <img src="../images/team-03.jpg" alt="Tony Lindley">
+                        <div class="team-section-share-container">
+                            <div class="team-section-share-btn">
+                                <i class="fas fa-share-alt"></i>
+                            </div>
+                            <div class="team-section-social-icons">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-section-member-info">
+                        <h3>Tony Lindley</h3>
+                        <p>UI Designer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Our Choose Section Starts -->
+    <section class="choose-section">
+        <div class="choose-header">
+            <span class="section-label">__ Our Choose __</span>
+            <h2>We Provide Flexible IT Choose</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                It has been the industry's standard dummy text ever since.</p>
+        </div>
+
+        <div class="choose-grid">
+            <div class="choose-card">
+                <div class="choose-icon">🚀</div>
+                <h3>Business Security</h3>
+                <ul>
+                    <li>Powerful Admin Panel</li>
+                    <li>Multi-Language Support</li>
+                    <li>Support via E-mail and Phone</li>
+                    <li>Digital project planning</li>
+                </ul>
+            </div>
+
+            <div class="choose-card">
+                <div class="choose-icon"><i class="fas fa-home"></i></div>
+                <h3>Finest Quality</h3>
+                <ul>
+                    <li>Powerful Admin Panel</li>
+                    <li>Multi-Language Support</li>
+                    <li>Support via E-mail and Phone</li>
+                    <li>Digital project planning</li>
+                </ul>
+            </div>
+
+            <div class="choose-card">
+                <div class="choose-icon"><i class="fa fa-computer"></i></div>
+                <h3>Perfect Design</h3>
+                <ul>
+                    <li>Powerful Admin Panel</li>
+                    <li>Multi-Language Support</li>
+                    <li>Support via E-mail and Phone</li>
+                    <li>Digital project planning</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="testimonial-section">
+        <h3 class="testimonial-header">__ OUR TESTIMONIAL __</h3>
+        <h2 class="testimonial-title">What Our Clients Say</h2>
+        <p class="testimonial-desc">
+            Lorem Ipsum is simply dummy It is a long established fact that a reader will be distracted by the readable
+            content.
+        </p>
+
+        <div class="testimonial-slider">
+            <div class="carousel-track">
+            <div class="testimonial-container">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <p class="stars">⭐⭐⭐⭐⭐ <span>Excellent!!</span></p>
+                    <p class="testimonial-text">
+                        Following best practices and procedures provided by leading organizations in the industry...
+                    </p>
+                    <div class="profile">
+                        <img src="../images/t1.png" alt="User 1">
+                        <div>
+                            <h4>Roboto William</h4>
+                            <p class="role">UI/UX Designer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <p class="stars">⭐⭐⭐⭐⭐ <span>Excellent!!</span></p>
+                    <p class="testimonial-text">
+                        Following best practices and procedures provided by leading organizations in the industry...
+                    </p>
+                    <div class="profile">
+                        <img src="../images/t2.png" alt="User 2">
+                        <div>
+                            <h4>Martha Alex</h4>
+                            <p class="role">Manager</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <p class="stars">⭐⭐⭐⭐⭐ <span>Excellent!!</span></p>
+                    <p class="testimonial-text">
+                        Following best practices and procedures provided by leading organizations in the industry...
+                    </p>
+                    <div class="profile">
+                        <img src="../images/t1.png" alt="User 3">
+                        <div>
+                            <h4>John Doe</h4>
+                            <p class="role">Software Engineer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card">
+                    <p class="stars">⭐⭐⭐⭐⭐ <span>Excellent!!</span></p>
+                    <p class="testimonial-text">
+                        Following best practices and procedures provided by leading organizations in the industry...
+                    </p>
+                    <div class="profile">
+                        <img src="../images/t2.png" alt="User 4">
+                        <div>
+                            <h4>Sarah Smith</h4>
+                            <p class="role">Product Manager</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <footer class="unique-footer">
+        <div class="unique-container">
+            <div class="unique-footer-content">
+                <!-- Logo & Description -->
+                <div class="unique-footer-column">
+                    <h3 class="unique-footer-logo">
+                        <img src="../images/logo-1.png" alt="Poket Logo">
+                    </h3>
+                    <p class="unique-footer-description">
+                        Round whitefish flat loach potted killifish ronguill. Long-finned pike escolar northern pike
+                        escolar nor them squawfish eel.
+                    </p>
+                    <div class="unique-social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+
+                <!-- Useful Links -->
+                <div class="unique-footer-column">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#">Software Development</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Community Meetups</a></li>
+                        <li><a href="#">Cloud and DevOps</a></li>
+                        <li><a href="#">Product Design</a></li>
+                    </ul>
+                </div>
+
+                <!-- Address Section -->
+                <div class="unique-footer-column">
+                    <h4>Address Us</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 378 FA Tower, William SBI 2123, US</li>
+                        <li><i class="fas fa-phone"></i> (+990) 698 598 631</li>
+                        <li><i class="fas fa-envelope"></i> demo@example.com</li>
+                        <li><i class="fas fa-clock"></i> Opening Hours: 9:00 - 6:00</li>
+                    </ul>
+                </div>
+
+                <!-- Navigation -->
+                <div class="unique-footer-column">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#">Become an Affiliate</a></li>
+                        <li><a href="#">About Drone</a></li>
+                        <li><a href="#">Community Meetups</a></li>
+                        <li><a href="#">Why Buy With Us?</a></li>
+                        <li><a href="#">Blog and News</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="unique-copyright-footer">
+        <div class="unique-container">
+            <p class="unique-copyright-text">Copyright © Poket all rights reserved.</p>
+            <ul class="unique-footer-links">
+                <li><a href="../html/service.html">Service</a></li>
+                <li><a href="../html/contact.html">Contact</a></li>
+                <li><a href="../html/about.html">About</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+    <!-- Swiper JS -->
+    <script src="../javascript/swiper-bundle.min.js"></script>
+
+    <script src="../javascript/service.js"></script>
+</body>
+
+</html>

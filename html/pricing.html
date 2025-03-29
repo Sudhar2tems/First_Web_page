@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - Poket</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/pricing.css">
+
+    <link rel="icon" href="https://themexbd.com/poket/itsolution/wp-content/uploads/2021/10/poket-favi.png"
+        sizes="32x32">
+
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="contact-info">
+            <span><i class="fas fa-home"></i> 2nd Floor New World</span>
+            <span><i class="fas fa-phone-alt"></i> +498556778345</span>
+            <span><i class="fas fa-envelope"></i> demo@example.com</span>
+        </div>
+
+        <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../images/logo.png" alt="Poket Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="../html/about.html">About</a></li>
+            <li><a href="../html/service.html">Service</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Pages <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="../html/clients.html">Our Clients</a></li>
+                    <li><a href="../html/pricing.html">Pricing</a></li>
+                    <li><a href="../html/team.html">Team</a></li>
+                    <li><a href="../html/faq.html">FAQ Page</a></li>
+                    <li><a href="../html/singleservices.html">Single Service</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbutn">Blog <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="../html/blog.html">Blog Grid</a></li>
+                    <li><a href="../html/blog Left Sidebar.html">Blog Left Sidebar</a></li>
+                    <li><a href="../html/blog Right Sidebar.html">Blog Right Sidebar</a></li>
+                </ul>
+            </li>
+            <li><a href="../html/contact.html">Contact</a></li>
+        </ul>
+
+        <div class="search-support">
+            <i class="fas fa-search"></i>
+            <button class="support-btn">Get a Support</button>
+            <!-- Menu Icon -->
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+    <!-- Sidebar Menu -->
+    <div class="menu" id="menu">
+        <div class="menu-header">
+            <img src="../images/logo.png" alt="Poket Logo">
+            <i class="fas fa-times" onclick="toggleMenu()"></i>
+        </div>
+        <ul>
+            <li class="menu-item"><a href="/index.html">Home</a></li>
+            <li class="menu-item"><a href="../html/about.html">About</a></li>
+            <li class="menu-item"><a href="../html/service.html">Service</a></li>
+            <li class="menu-item" onclick="toggleSubMenu('pages-submenu1', this)">
+                Pages <i class="fas fa-plus"></i>
+            </li>
+            <ul class="submenu" id="pages-submenu1">
+                <li class="menu-item"><a href="../html/clients.html">Our Clients</a></li>
+                <li class="menu-item"><a href="../html/pricing.html">Pricing</a></li>
+                <li class="menu-item"><a href="../html/team.html">Team></a></li>
+                <li class="menu-item"><a href="../html/faq.html">FAQ Page</a></li>
+                <li class="menu-item"><a href="../html/singleservices.html">Single Service</a></li>
+            </ul>
+            <li class="menu-item" onclick="toggleSubMenu('blog-submenu', this)">
+                Blog <i class="fas fa-plus"></i>
+            </li>
+            <ul class="submenu" id="blog-submenu">
+                <li class="menu-item"><a href="../html/blog.html">Blog Grid</a></li>
+                <li class="menu-item"><a href="../html/blog Left Sidebar.html">Blog Left Sidebar</a></li>
+                <li class="menu-item"><a href="../html/blog Right Sidebar.html">Blog Right Sidebar</a></li>
+            </ul>
+            <li class="menu-item"><a href="../html/contact.html">Contact</a></li>
+
+    </div>
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Pricing</h1>
+            <p>You Are Currently Here! > <a href="/index.html">Home</a> > Pricing</p>
+        </div>
+    </section>
+
+
+    <!-- Section 1 -->
+    <section class="pricing-section">
+        <h3>OUR PRICING</h3>
+        <h2>Choose Your Best Plan</h2>
+        <div class="pricing-container dark">
+            <div class="pricing-box">
+                <h3>For Team</h3>
+                <p class="price">$39.99 <span>/month</span></p>
+                <ul>
+                    <li>Powerful Admin Panel</li>
+                    <li>Multi-language Support</li>
+                    <li>Support via Email and Phone</li>
+                    <li>Digital project planning</li>
+                    <li>Planning Solution</li>
+                </ul>
+                <button>Subscribe Now</button>
+            </div>
+            <div class="pricing-box active">
+                <h3>Personal</h3>
+                <p class="price">$29.99 <span>/month</span></p>
+                <ul>
+                    <li>Powerful Admin Panel</li>
+                    <li>Multi-language Support</li>
+                    <li>Support via Email and Phone</li>
+                    <li>Digital project planning</li>
+                    <li>Planning Solution</li>
+                </ul>
+                <button>Subscribe Now</button>
+            </div>
+            <div class="pricing-box">
+                <h3>Advance</h3>
+                <p class="price">$99.99 <span>/month</span></p>
+                <ul>
+                    <li>Powerful Admin Panel</li>
+                    <li>Multi-language Support</li>
+                    <li>Support via Email and Phone</li>
+                    <li>Digital project planning</li>
+                    <li>Planning Solution</li>
+                </ul>
+                <button>Subscribe Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="custom-pricing-section">
+        <h3 class="custom-sub-heading">Pricing Plan</h3>
+        <h2 class="custom-main-heading">Customer Plans Anytime</h2>
+
+        <div class="custom-pricing-cards">
+
+            <!-- Advance Plan -->
+            <div class="advance-card">
+                <div class="custom-icon"><i class="fas fa-paper-plane"></i></div>
+                <h3 class="custom-plan-title">Advance Plan</h3>
+                <p class="custom-price-bar">$<span>31</span> One Day</p>
+                <ul class="custom-feature-list">
+                    <li><i class="fas fa-angle-double-right"></i> 40 Space Users</li>
+                    <li><i class="fas fa-angle-double-right"></i> Unlimited Service</li>
+                    <li><i class="fas fa-angle-double-right"></i> 15 GB Space</li>
+                    <li><i class="fas fa-angle-double-right"></i> Unlimited Bandwith</li>
+                    <li><i class="fas fa-angle-double-right"></i> Support Reports</li>
+                </ul>
+                <button class="custom-subscribe-btn">Subscribe Now</button>
+            </div>
+
+            <!-- Monthly Plan -->
+            <div class="monthly-card">
+                <div class="custom-popular-ribbon">Popular</div>
+                <div class="custom-icon"><i class="fas fa-money-check-alt"></i></div>
+                <h3 class="custom-plan-title">Monthly</h3>
+                <p class="custom-price-bar">$<span>59</span> Monthly</p>
+                <ul class="custom-feature-list">
+                    <li><i class="fas fa-angle-double-right"></i> 40 Space Users</li>
+                    <li><i class="fas fa-angle-double-right"></i> Unlimited Service</li>
+                    <li><i class="fas fa-angle-double-right"></i> 15 GB Space</li>
+                    <li><i class="fas fa-angle-double-right"></i> Unlimited Bandwith</li>
+                    <li><i class="fas fa-angle-double-right"></i> Support Reports</li>
+                </ul>
+                <button class="custom-subscribe-btn">Subscribe Now</button>
+            </div>
+
+            <!-- Yearly Plan -->
+            <div class="yearly-card">
+                <div class="custom-icon"><i class="fab fa-bitcoin"></i></div>
+                <h3 class="custom-plan-title">Yearly</h3>
+                <p class="custom-price-bar">$<span>99</span> One Day</p>
+                <ul class="custom-feature-list">
+                    <li><i class="fas fa-angle-double-right"></i> 40 Space Users</li>
+                    <li><i class="fas fa-angle-double-right"></i> Unlimited Service</li>
+                    <li><i class="fas fa-angle-double-right"></i> 15 GB Space</li>
+                    <li><i class="fas fa-angle-double-right"></i> Unlimited Bandwith</li>
+                    <li><i class="fas fa-angle-double-right"></i> Support Reports</li>
+                </ul>
+                <button class="custom-subscribe-btn">Subscribe Now</button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Section 3 -->
+    <section class="before-pricing-section">
+        <p class="before-sub-heading">Our Pricing</p>
+        <h2 class="before-main-heading">Customer Plans Anytime</h2>
+
+        <div class="before-card-wrapper">
+
+            <!-- Basic Plan -->
+            <div class="before-card before-basic-card">
+                <div class="before-icon before-basic-icon"><i class="fas fa-paper-plane"></i></div>
+                <div class="before-title before-basic-title">Basic Plan</div>
+                <div class="before-price-bar before-basic-price">$20<span>/mo</span></div>
+                <ul class="before-feature-list before-basic-features">
+                    <li><i class="fas fa-check"></i>45 Space Users</li>
+                    <li><i class="fas fa-check"></i>Unlimited Service</li>
+                    <li><i class="fas fa-check"></i>155 GB Space</li>
+                    <li><i class="fas fa-check"></i>Unlimited Execute</li>
+                    <li><i class="fas fa-check"></i>Support Request</li>
+                </ul>
+                <button class="before-btn before-basic-btn">Buy Now</button>
+            </div>
+
+            <!-- Advance Plan -->
+            <div class="before-card before-advance-card">
+                <div class="before-popular-ribbon">Popular</div>
+                <div class="before-icon before-advance-icon"><i class="fas fa-money-check-alt"></i></div>
+                <div class="before-title before-advance-title">Advance Plan</div>
+                <div class="before-price-bar before-advance-price">$30<span>/ye</span></div>
+                <ul class="before-feature-list before-advance-features">
+                    <li><i class="fas fa-check"></i>45 Space Users</li>
+                    <li><i class="fas fa-check"></i>Unlimited Service</li>
+                    <li><i class="fas fa-check"></i>155 GB Space</li>
+                    <li><i class="fas fa-check"></i>Unlimited Execute</li>
+                    <li><i class="fas fa-check"></i>Support Request</li>
+                </ul>
+                <button class="before-btn before-advance-btn">Buy Now</button>
+            </div>
+
+            <!-- Starter Plan -->
+            <div class="before-card before-starter-card">
+                <div class="before-icon before-starter-icon"><i class="fab fa-bitcoin"></i></div>
+                <div class="before-title before-starter-title">Starter Plan</div>
+                <div class="before-price-bar before-starter-price">$50<span>/we</span></div>
+                <ul class="before-feature-list before-starter-features">
+                    <li><i class="fas fa-check"></i>45 Space Users</li>
+                    <li><i class="fas fa-check"></i>Unlimited Service</li>
+                    <li><i class="fas fa-check"></i>155 GB Space</li>
+                    <li><i class="fas fa-check"></i>Unlimited Execute</li>
+                    <li><i class="fas fa-check"></i>Support Request</li>
+                </ul>
+                <button class="before-btn before-starter-btn">Buy Now</button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer class="unique-footer">
+        <div class="unique-container">
+            <div class="unique-footer-content">
+                <!-- Logo & Description -->
+                <div class="unique-footer-column">
+                    <h3 class="unique-footer-logo">
+                        <img src="../images/logo-1.png" alt="Poket Logo">
+                    </h3>
+                    <p class="unique-footer-description">
+                        Round whitefish flat loach potted killifish ronguill. Long-finned pike escolar northern pike
+                        escolar nor them squawfish eel.
+                    </p>
+                    <div class="unique-social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+
+                <!-- Useful Links -->
+                <div class="unique-footer-column">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#">Software Development</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Community Meetups</a></li>
+                        <li><a href="#">Cloud and DevOps</a></li>
+                        <li><a href="#">Product Design</a></li>
+                    </ul>
+                </div>
+
+                <!-- Address Section -->
+                <div class="unique-footer-column">
+                    <h4>Address Us</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 378 FA Tower, William SBI 2123, IL, US</li>
+                        <li><i class="fas fa-phone"></i> (+990) 698 598 631</li>
+                        <li><i class="fas fa-envelope"></i> demo@example.com</li>
+                        <li><i class="fas fa-clock"></i> Opening Hours: 9:00 - 6:00</li>
+                    </ul>
+                </div>
+
+                <!-- Navigation -->
+                <div class="unique-footer-column">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#">Become an Affiliate</a></li>
+                        <li><a href="#">About Drone</a></li>
+                        <li><a href="#">Community Meetups</a></li>
+                        <li><a href="#">Why Buy With Us?</a></li>
+                        <li><a href="#">Blog and News</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="unique-copyright-footer">
+        <div class="unique-container">
+            <p class="unique-copyright-text">Copyright © Poket all rights reserved.</p>
+            <ul class="unique-footer-links">
+                <li><a href="../html/service.html">Service</a></li>
+                <li><a href="../html/contact.html">Contact</a></li>
+                <li><a href="../html/about.html">About</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="../javascript/pricing.js"></script>
+</body>
+
+</html>

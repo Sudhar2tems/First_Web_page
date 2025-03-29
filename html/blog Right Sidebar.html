@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="icon" href="https://themexbd.com/poket/itsolution/wp-content/uploads/2021/10/poket-favi.png"
+        sizes="32x32">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/blog Right.css">
+
+    <title>Blog Right Sidebar -Pocket</title>
+
+</head>
+
+<body>
+
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="contact-info">
+            <span><i class="fas fa-home"></i> 2nd Floor New World</span>
+            <span><i class="fas fa-phone-alt"></i> +498556778345</span>
+            <span><i class="fas fa-envelope"></i> demo@example.com</span>
+        </div>
+
+        <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../images/logo.png" alt="Poket Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="../html/about.html">About</a></li>
+            <li><a href="../html/service.html">Service</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Pages <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="../html/client.html">Our Clients</a></li>
+                    <li><a href="../html/pricing.html">Pricing</a></li>
+                    <li><a href="../html/team.html">Team</a></li>
+                    <li><a href="../html/faq.html">FAQ Page</a></li>
+                    <li><a href="../html/singleservices.html">Single Service</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbutn">Blog <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="../html/blog.html">Blog Grid</a></li>
+                    <li><a href="../html/blog Left Sidebar.html">Blog Left Sidebar</a></li>
+                    <li><a href="../html/ Right Sidebar.html">Blog Right Sidebar</a></li>
+                </ul>
+            </li>
+            <li><a href="../html/contact.html">Contact</a></li>
+        </ul>
+
+        <div class="search-support">
+            <i class="fas fa-search"></i>
+            <button class="support-btn">Get a Support</button>
+            <!-- Menu Icon -->
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+    <!-- Sidebar Menu -->
+    <div class="menu" id="menu">
+        <div class="menu-header">
+            <img src="../images/logo.png" alt="Poket Logo">
+            <i class="fas fa-times" onclick="toggleMenu()"></i>
+        </div>
+        <ul>
+            <li class="menu-item"><a href="/index.html">Home</a></li>
+            <li class="menu-item"><a href="../html/about.html">About</a></li>
+            <li class="menu-item"><a href="../html/service.html">Service</a></li>
+            <li class="menu-item" onclick="toggleSubMenu('pages-submenu1', this)">
+                Pages <i class="fas fa-plus"></i>
+            </li>
+            <ul class="submenu" id="pages-submenu1">
+                <li class="menu-item"><a href="../html/client.html">Our Clients</a></li>
+                <li class="menu-item"><a href="../html/pricing.html">Pricing</a></li>
+                <li class="menu-item"><a href="../html/team.html">Team></a></li>
+                <li class="menu-item"><a href="../html/faq.html">FAQ Page</a></li>
+                <li class="menu-item"><a href="../html/singleservices.html">Single Service</a></li>
+            </ul>
+            <li class="menu-item" onclick="toggleSubMenu('blog-submenu', this)">
+                Blog <i class="fas fa-plus"></i>
+            </li>
+            <ul class="submenu" id="blog-submenu">
+                <li class="menu-item"><a href="../html/blog.html">Blog Grid</a></li>
+                <li class="menu-item"><a href="../html/blog Left Sidebar.html">Blog Left Sidebar</a></li>
+                <li class="menu-item"><a href="../html/blog Right Sidebar.html">Blog Right Sidebar</a></li>
+            </ul>
+            <li class="menu-item"><a href="../html/contact.html">Contact</a></li>
+
+    </div>
+
+
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Blog Right Sidebar</h1>
+            <p>You Are Currently Here! > <a href="/index.html">Home</a> > Blog Right Sidebar</p>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="search-box">
+                <input type="text" placeholder="Search">
+                <button>🔍</button>
+            </div>
+
+            <div class="widget">
+                <h3>Archives</h3>
+                <ul>
+                    <li>August 2021</li>
+                    <li>June 2021</li>
+                    <li>June 2020</li>
+                </ul>
+            </div>
+
+            <div class="widget">
+                <h3>Categories</h3>
+                <ul>
+                    <li>Developer</li>
+                    <li>Marketing</li>
+                </ul>
+            </div>
+
+            <div class="widget">
+                <h3>Meta</h3>
+                <ul>
+                    <li>Log in</li>
+                    <li>Entries feed</li>
+                    <li>Comments feed</li>
+                    <li>WordPress.org</li>
+                </ul>
+            </div>
+
+            <div class="calendar">
+                <h3 id="month-title"></h3>
+                <table id="calendar-table">
+                    <thead>
+                        <tr>
+                            <th>M</th>
+                            <th>T</th>
+                            <th>W</th>
+                            <th>T</th>
+                            <th>F</th>
+                            <th>S</th>
+                            <th>S</th>
+                        </tr>
+                    </thead>
+                    <tbody id="calendar-body">
+                        <!-- JS will populate this -->
+                    </tbody>
+                </table>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <div class="post">
+                <img src="../images/blog1.jpg" alt="Blog Image">
+                <div class="post-details">
+                    <h2>Open source job report in enings fewer.</h2>
+                    <p class="date">📅 August 24, 2021 | 💬 0 Comments</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                    <button class="details-btn">Details</button>
+                </div>
+            </div>
+
+            <div class="post">
+                <img src="../images/blog2.jpg" alt="Blog Image">
+                <div class="post-details">
+                    <h2>Email marketing tips that will increase your sales.</h2>
+                    <p class="date">📅 August 24, 2021 | 💬 0 Comments</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                    <button class="details-btn">Details</button>
+                </div>
+            </div>
+
+            <div class="post">
+                <img src="../images/blog5.jpg" alt="Blog Image">
+                <div class="post-details">
+                    <h2>How to stay productive while working remotely.</h2>
+                    <p class="date">📅 August 24, 2021 | 💬 0 Comments</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                    <button class="details-btn">Details</button>
+                </div>
+            </div>
+
+            <div class="post">
+                <img src="../images/blog3.jpg" alt="Blog Image">
+                <div class="post-details">
+                    <h2>7 Secrets About Nonprofit That For The Past 50 Years.</h2>
+                    <p class="date">📅 June 8, 2021 | 💬 0 Comments</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                    <button class="details-btn">Details</button>
+                </div>
+            </div>
+
+            <div class="post">
+                <img src="../images/blog4.jpg" alt="Blog Image">
+                <div class="post-details">
+                    <h2>Netflix’s “Orange Is the New Black” Brings</h2>
+                    <p class="date">📅 June 8, 2021 | 💬 0 Comments</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                    <button class="details-btn">Details</button>
+                </div>
+            </div>
+
+            <div class="post">
+                <img src="../images/blog6.jpg" alt="Blog Image">
+                <div class="post-details">
+                    <h2>The Biggest Contribution To Humanity.</h2>
+                    <p class="date">📅 June 8, 2020 | 💬 0 Comments</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                    <button class="details-btn">Details</button>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+
+
+    <footer class="unique-footer">
+        <div class="unique-container">
+            <div class="unique-footer-content">
+                <!-- Logo & Description -->
+                <div class="unique-footer-column">
+                    <h3 class="unique-footer-logo">
+                        <img src="../images/logo-1.png" alt="Poket Logo">
+                    </h3>
+                    <p class="unique-footer-description">
+                        Round whitefish flat loach potted killifish ronguill. Long-finned pike escolar northern pike
+                        escolar nor them squawfish eel.
+                    </p>
+                    <div class="unique-social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+
+                <!-- Useful Links -->
+                <div class="unique-footer-column">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#">Software Development</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Community Meetups</a></li>
+                        <li><a href="#">Cloud and DevOps</a></li>
+                        <li><a href="#">Product Design</a></li>
+                    </ul>
+                </div>
+
+                <!-- Address Section -->
+                <div class="unique-footer-column">
+                    <h4>Address Us</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 378 FA Tower, William SBI 2123, US</li>
+                        <li><i class="fas fa-phone"></i> (+990) 698 598 631</li>
+                        <li><i class="fas fa-envelope"></i> demo@example.com</li>
+                        <li><i class="fas fa-clock"></i> Opening Hours: 9:00 - 6:00</li>
+                    </ul>
+                </div>
+
+                <!-- Navigation -->
+                <div class="unique-footer-column">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#">Become an Affiliate</a></li>
+                        <li><a href="#">About Drone</a></li>
+                        <li><a href="#">Community Meetups</a></li>
+                        <li><a href="#">Why Buy With Us?</a></li>
+                        <li><a href="#">Blog and News</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="unique-copyright-footer">
+        <div class="unique-container">
+            <p class="unique-copyright-text">Copyright © Poket all rights reserved.</p>
+            <ul class="unique-footer-links">
+                <li><a href="../html/service.html">Service</a></li>
+                <li><a href="../html/contact.html">Contact</a></li>
+                <li><a href="../html/about.html">About</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+
+    <script src="../javascript/blog left.js"></script>
+</body>
+
+</html>
