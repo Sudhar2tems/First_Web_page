@@ -80,31 +80,33 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
   
-
-
+  
   const track = document.querySelector('.testimonial-container');
   const cards = document.querySelectorAll('.testimonial-card');
-  const visibleCards = 2; // because your layout shows 2 at a time
-  const cardWidth = cards[0].offsetWidth + 20; // 20 is your CSS gap
+  
+  // Detect screen size
+  const isMobile = window.innerWidth <= 480;
+  const visibleCards = isMobile ? 1 : 2;
+  const cardWidth = cards[0].offsetWidth;
   const total = cards.length;
   let index = 0;
-
-  // Clone first 2 cards and append to end for smooth looping
+  
+  // Clone first N cards for looping
   for (let i = 0; i < visibleCards; i++) {
     track.appendChild(cards[i].cloneNode(true));
   }
-
+  
   setInterval(() => {
     index++;
     track.style.transition = 'transform 0.5s ease-in-out';
     track.style.transform = `translateX(-${index * cardWidth}px)`;
-
-    // Reset when reaching the end (after last real slide)
+  
     if (index >= total) {
       setTimeout(() => {
         track.style.transition = 'none';
         track.style.transform = 'translateX(0)';
         index = 0;
-      }, 500); // match the transition duration
+      }, 500);
     }
   }, 5000);
+  

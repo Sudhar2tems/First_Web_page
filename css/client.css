@@ -967,3 +967,73 @@ ul {
         font-size: 16px;
     }
 }
+
+@media (max-width: 480px) {
+    .testimonial-section {
+        padding: 40px 15px;
+    }
+
+    .testimonial-header {
+        font-size: 14px;
+    }
+
+    .testimonial-title {
+        font-size: 24px;
+    }
+
+    .testimonial-desc {
+        font-size: 14px;
+        max-width: 90%;
+    }
+
+    .testimonial-slider {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .testimonial-container {
+        gap: 0;
+    }
+
+    .testimonial-card {
+        min-width: 100%;
+        padding: 25px 15px;
+        height: auto;
+        box-sizing: border-box;
+        border-radius: 12px;
+    }
+
+    .stars {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .stars span {
+        display: block;
+        margin-top: 4px;
+    }
+
+    .testimonial-text {
+        font-size: 14px;
+        padding: 5px 0;
+    }
+
+    .profile {
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .profile h4 {
+        font-size: 16px;
+    }
+
+    .role {
+        font-size: 13px;
+    }
+}

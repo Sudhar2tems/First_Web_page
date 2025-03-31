@@ -2485,3 +2485,41 @@ h2 {
         font-size: 16px;
     }
 }
+
+@media (max-width: 480px) {
+    .case-item {
+        flex: 0 0 100%;
+        scroll-snap-align: start;
+    }
+
+    .case-studies-carousel {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        gap: 15px;
+    }
+    .carousel-btn {
+        display: none;
+    }
+    .carousel-wrapper {
+        padding: 0 0px;
+    }
+
+    .carousel-btn {
+        display: none;
+    }
+
+    .case-item img {
+        height: 200px;
+    }
+
+    .section-title {
+        font-size: 22px;
+    }
+
+    .section-description {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+}

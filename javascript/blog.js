@@ -53,14 +53,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-
 document.addEventListener("DOMContentLoaded", function () {
     var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3, // Number of slides visible at a time
-        spaceBetween: 30, // Space between slides
-        loop: true, // Enable infinite loop
-        centerSlide: 'true',
-        gragCursor: 'true',
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        centerSlide: true,
+        grabCursor: true,
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
@@ -71,9 +70,18 @@ document.addEventListener("DOMContentLoaded", function () {
             prevEl: ".prev-btn",
         },
         breakpoints: {
-            1024: { slidesPerView: 3 },
-            768: { slidesPerView: 2 },
-            480: { slidesPerView: 1 },
+            1024: {
+                slidesPerView: 3,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            480: {
+                slidesPerView: 1,
+            },
+            0: {
+                slidesPerView: 1, // ensure <480px also gets 1 card
+            }
         }
     });
 });

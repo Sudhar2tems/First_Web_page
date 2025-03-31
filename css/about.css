@@ -1765,3 +1765,63 @@ ul {
     }
 
 }
+
+@media (max-width: 480px) {
+    .service-section {
+        padding: 30px 15px;
+    }
+
+    .service-heading {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .service-label {
+        font-size: 12px;
+    }
+
+    .services {
+        padding: 30px 10px;
+    }
+
+    .services-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .service-card {
+        width: 100%;
+        max-width: 230px;
+        height: 150px;
+        padding: 60px 20px;
+    }
+
+    .service-card i {
+        font-size: 40px;
+        top: 10%;
+    }
+
+    .service-card h3 {
+        font-size: 16px;
+    }
+
+    .service-card p {
+        font-size: 13px;
+        text-align: center;
+        padding: 0 5px;
+    }
+
+    .service-card img {
+        object-fit: cover;
+    }
+
+    .service-card:hover i {
+        font-size: 80px;
+    }
+
+    .service-card:hover {
+        background-color: #0c1631;
+    }
+}

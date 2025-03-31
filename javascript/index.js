@@ -56,21 +56,36 @@ document.addEventListener("DOMContentLoaded", function() {
 
 document.addEventListener("DOMContentLoaded", () => {
     const wrapper = document.querySelector(".case-studies-carousel");
-    const items = document.querySelectorAll(".case-item");
     const prevBtn = document.getElementById("prevBtn");
     const nextBtn = document.getElementById("nextBtn");
 
-    let currentIndex = 0;
-    const visibleCards = 3;
-    const totalCards = items.length;
-
-    // Clone first few cards for infinite loop effect
-    for (let i = 0; i < visibleCards; i++) {
-        wrapper.appendChild(items[i].cloneNode(true));
+    // Exit if mobile: let CSS handle it (smooth swipe)
+    if (window.innerWidth <= 480) {
+        prevBtn.style.display = 'none';
+        nextBtn.style.display = 'none';
+        return;
     }
 
-    const cardWidth = items[0].offsetWidth;
+    let items = document.querySelectorAll(".case-item");
+    let currentIndex = 0;
+    let cardWidth = items[0].offsetWidth;
+    const visibleCards = 3;
+    let totalCards = items.length;
     let autoSlide;
+
+    function updateCardWidth() {
+        cardWidth = items[0].offsetWidth;
+    }
+
+    function cloneCards() {
+        // Remove existing clones
+        document.querySelectorAll(".case-item.clone").forEach(clone => clone.remove());
+        for (let i = 0; i < visibleCards; i++) {
+            const clone = items[i].cloneNode(true);
+            clone.classList.add("clone");
+            wrapper.appendChild(clone);
+        }
+    }
 
     function slideTo(index) {
         wrapper.style.transition = 'transform 0.5s ease-in-out';
@@ -106,7 +121,29 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    // Event listeners
+    function startAutoSlide() {
+        autoSlide = setInterval(nextSlide, 3000);
+    }
+
+    function resetAutoSlide() {
+        clearInterval(autoSlide);
+        startAutoSlide();
+    }
+
+    function setupCarousel() {
+        currentIndex = 0;
+        items = document.querySelectorAll(".case-item:not(.clone)");
+        totalCards = items.length;
+        updateCardWidth();
+        cloneCards();
+        slideTo(currentIndex);
+    }
+
+    // Initialize
+    setupCarousel();
+    startAutoSlide();
+
+    // Events
     nextBtn.addEventListener("click", () => {
         nextSlide();
         resetAutoSlide();
@@ -117,22 +154,12 @@ document.addEventListener("DOMContentLoaded", () => {
         resetAutoSlide();
     });
 
-    // Auto Slide
-    function startAutoSlide() {
-        autoSlide = setInterval(nextSlide, 3000);
-    }
-
-    function resetAutoSlide() {
-        clearInterval(autoSlide);
-        startAutoSlide();
-    }
-
-    startAutoSlide();
-
-    // Recalculate on window resize
     window.addEventListener("resize", () => {
         wrapper.style.transition = 'none';
-        slideTo(currentIndex);
+        if (window.innerWidth <= 480) {
+            location.reload(); // Quick way to fallback to swipe mode
+        } else {
+            setupCarousel();
+        }
     });
 });
-

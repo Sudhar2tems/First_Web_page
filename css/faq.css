@@ -904,3 +904,24 @@ ul {
     }
 
 }
+
+@media (max-width: 480px) {
+    .faq-right {
+        flex: 1 1 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .faq-right img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        display: block;
+        margin: -35px;
+        transition: transform 0.3s ease;
+    }
+
+    .faq-right img:hover {
+        transform: scale(1.03); /* slight zoom on hover for interactivity */
+    }
+}
